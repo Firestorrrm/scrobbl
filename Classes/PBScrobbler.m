@@ -433,7 +433,7 @@
     
     stateObserver = [[PBScrobblerStateNotificationObserver alloc] initWithScrobbler:self];
     
-    thumbsObserver = [[PBThumbsNotificationObserver alloc] initWithScrobbler:self];
+//    thumbsObserver = [[PBThumbsNotificationObserver alloc] initWithScrobbler:self];
     
     [[[RKObjectManager sharedManager] HTTPClient] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
 
