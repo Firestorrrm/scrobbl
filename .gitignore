@@ -1,12 +1,10 @@
 # Created by http://www.gitignore.io
-
 ### Objective-C ###
 # Xcode
 #
 [b|B]uild/
 *.deb
 !Build/scrobbl_1.0.0.deb
-
 .theos
 theos
 theos/
@@ -28,7 +26,6 @@ DerivedData
 *.ipa
 *.xcuserstate
 apikey.h
-
 # CocoaPods
 #
 # We recommend against adding the Pods directory to your .gitignore. However
@@ -36,28 +33,21 @@ apikey.h
 # http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
 #
 # Pods/
-
-
 ### OSX ###
 .DS_Store
 .AppleDouble
 .LSOverride
-
 # Icon must end with two \r
 Icon
-
-
 # Thumbnails
 ._*
-
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
-
 # Directories potentially created on remote AFP share
 .AppleDB
 .AppleDesktop
 Network Trash Folder
 Temporary Items
 .apdisk
-
+*.o
