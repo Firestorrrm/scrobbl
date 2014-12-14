@@ -103,6 +103,12 @@
         }
     }
     
+    BOOL isAudiobook = [[info objectForKey:(__bridge NSString *)kMRMediaRemoteOptionMediaType] isEqualToString:(__bridge NSString*)kMRMediaRemoteMediaTypeAudioBook];
+    if (isAudiobook && ![[NSUserDefaults standardUserDefaults] objectForKey:@"canScrobbleAudiobooks"]) {
+        NSLog(@"Ignoring track (audiobook)");
+        return YES;
+    }
+    
     if(![[info objectForKey:(__bridge NSString *)kMRMediaRemoteNowPlayingInfoArtist] length] || ![[info objectForKey: (__bridge NSString *)kMRMediaRemoteNowPlayingInfoTitle] length]){
         return YES;
     }
