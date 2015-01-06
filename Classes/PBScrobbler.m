@@ -104,7 +104,7 @@
     }
     
     BOOL isAudiobook = [[info objectForKey:(__bridge NSString *)kMRMediaRemoteOptionMediaType] isEqualToString:(__bridge NSString*)kMRMediaRemoteMediaTypeAudioBook];
-    if (isAudiobook && ![[NSUserDefaults standardUserDefaults] objectForKey:@"canScrobbleAudiobooks"]) {
+    if (isAudiobook && ![[[NSUserDefaults standardUserDefaults] objectForKey:@"canScrobbleAudiobooks"]  boolValue]) {
         NSLog(@"Ignoring track (audiobook)");
         return YES;
     }
