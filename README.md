@@ -5,6 +5,7 @@ Scrobbl is a Last.fm scrobbling daemon for (jailbroken) iOS.
 This is a rewrite of the [original](http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=scrobblData) daemon with numerous improvements and fixes.
 
 #### [Get latest build (.deb)](https://github.com/comscandiumplumbumd/scrobbl/tree/master/Build)
+#### Warning: having your phone locked with passcode on breaks scrobbler (see [Issue #7](/../../issues/7)). It is suggested to disable it for time being.
 
 ### iOS version support
 
